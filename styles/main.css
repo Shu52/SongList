@@ -1,0 +1,11 @@
+.div--container{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    background-color:#a82ea8;
+    color:ivory;
+    font-size:1.5rem;
+}
+#userSongs{
+    border:2px solid ivory
+}
