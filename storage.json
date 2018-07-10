@@ -1,0 +1,64 @@
+{
+  "songs": [
+    {
+      "id": 0,
+      "title": "test",
+      "album": "test",
+      "artist": "test"
+    },
+    {
+      "title": "Sell Out",
+      "album": "Turn the Radio Off",
+      "artist": "Reel Big Fish",
+      "id": 1
+    },
+    {
+      "title": "I Try",
+      "album": "Oh How Life Is",
+      "artist": "Macy Gray",
+      "id": 2
+    },
+    {
+      "title": "Creep",
+      "album": "Pablo Honey ",
+      "artist": "Radiohead",
+      "id": 3
+    },
+    {
+      "title": "Back That Ass Up",
+      "album": "400 Degreez",
+      "artist": "Juvenile",
+      "id": 4
+    },
+    {
+      "title": "Eat It",
+      "album": "Weird Al\" Yankovic in 3-D",
+      "artist": "Weird Al\" Yankovic",
+      "id": 5
+    },
+    {
+      "title": "100 years",
+      "album": "The Battle for Everything. ",
+      "artist": "Five for Fighting",
+      "id": 6
+    },
+    {
+      "title": "test2",
+      "album": "test2",
+      "artist": "test2",
+      "id": 7
+    },
+    {
+      "title": "Brick",
+      "album": "Whatever and Ever",
+      "artist": "Ben Folds Five",
+      "id": 8
+    },
+    {
+      "title": "Rolling iIn the Deep",
+      "album": "21",
+      "artist": "Adele",
+      "id": 9
+    }
+  ]
+}
