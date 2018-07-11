@@ -2,62 +2,72 @@
   "songs": [
     {
       "title": "Amazing Grace",
-      "album": "test",
+      "album": "anyone",
       "artist": "test",
+      "owned": "true",
       "id": 0
     },
     {
       "title": "Sell Out",
       "album": "Turn the Radio Off",
       "artist": "Reel Big Fish",
+      "owned": false,
       "id": 1
     },
     {
       "title": "I Try",
       "album": "Oh How Life Is",
       "artist": "Macy Gray",
+      "owned": false,
       "id": 2
     },
     {
       "title": "Creep",
       "album": "Pablo Honey ",
       "artist": "Radiohead",
+      "owned": false,
       "id": 3
     },
     {
       "title": "Back That Ass Up",
       "album": "400 Degreez",
       "artist": "Juvenile",
+      "owned": false,
       "id": 4
     },
     {
       "title": "Eat It",
       "album": "Weird Al\" Yankovic in 3-D",
       "artist": "Weird Al\" Yankovic",
+      "owned": false,
       "id": 5
     },
     {
       "title": "100 years",
       "album": "The Battle for Everything. ",
       "artist": "Five for Fighting",
+      "owned": false,
       "id": 6
     },
     {
       "title": "tes3",
       "album": "test3",
       "artist": "test3",
+      "owned": false,
       "id": 7
     },
     {
       "title": "Brick",
       "album": "Whatever and Ever",
       "artist": "Ben Folds Five",
+      "owned": false,
       "id": 8
     },
     {
       "title": "Rolling iIn the Deep",
       "album": "21",
       "artist": "Adele",
+      "owned": false,
       "id": 9
     }
   ]

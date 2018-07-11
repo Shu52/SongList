@@ -15,7 +15,8 @@ const editSubmitSong = Object.create({}, {
             const song = {
                 title: $songTitleValue,
                 album: $songAlbumValue,
-                artist: $songArtistValue
+                artist: $songArtistValue,
+                owned:false
             }
             databaseMethods.putSong(id, song).then(() => {
                 clear()

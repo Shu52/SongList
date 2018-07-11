@@ -19,7 +19,6 @@ body.addEventListener("click", () => {
     } else if (event.target.id === "songPut") {
         const id = $(event.target).parent().attr("id");
         module.exports = id
-        console.log("id from eventlisteners", id)
         clear();
         songPut.songPut()
 
@@ -27,5 +26,10 @@ body.addEventListener("click", () => {
         editSubmitSong.editSubmitSong()
     } else if (event.target.id === "songSubmit") {
         submitSong.submitSong()
+    } else if (event.target.id === "owned") {
+        const artRef = document.querySelector(".userSong")
+        const id = artRef.id
+
+        databaseMethods.ownSong(id, true)
     }
 }) //end of body listener

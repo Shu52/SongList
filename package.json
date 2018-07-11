@@ -15,5 +15,9 @@
     "grunt-contrib-uglify-es": "^3.3.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-eslint": "^21.0.0"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "json-server": "^0.14.0"
   }
 }

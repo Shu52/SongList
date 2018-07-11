@@ -25,11 +25,11 @@ const databaseMethods = Object.create({}, {
         }
     },
     putSong: {
-        value: (id, event) => {
+        value: (id, song) => {
            return $.ajax({
                 url: `http://localhost:3000/songs/${id}`,
                 method: "PUT",
-                data: event
+                data: song
             })
         }
     },
@@ -38,5 +38,16 @@ const databaseMethods = Object.create({}, {
             return $.ajax(`http://localhost:3000/songs/${id}`)
         }
     },
+    ownSong:{
+        value:(id,tf)=>{
+            return $.ajax({
+                url: `http://localhost:3000/songs/${id}`,
+                method: "PATCH",
+                data: {
+                    owned:tf
+                }
+        })
+    }
+}
 })
 module.exports = databaseMethods
