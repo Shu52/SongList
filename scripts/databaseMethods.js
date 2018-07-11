@@ -39,12 +39,12 @@ const databaseMethods = Object.create({}, {
         }
     },
     ownSong:{
-        value:(id,tf)=>{
+        value:(id,torf)=>{
             return $.ajax({
                 url: `http://localhost:3000/songs/${id}`,
                 method: "PATCH",
                 data: {
-                    owned:tf
+                    owned:torf
                 }
         })
     }

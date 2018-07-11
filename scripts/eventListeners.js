@@ -1,7 +1,6 @@
 const $ = require("jquery")
 const dashboard = require("./dashboard")
 const databaseMethods = require("./databaseMethods")
-const addSong = require("./addSong")
 const submitSong = require("./submitSong")
 const clear = require("./clear")
 const songPut = require("./songPut")
@@ -13,7 +12,6 @@ body.addEventListener("click", () => {
         const id = $(event.target).parent().attr("id");
         databaseMethods.deleteSong(id).then((response) => {
             clear();
-            // addSong.addSong()
             dashboard.dashboard()
         })
     } else if (event.target.id === "songPut") {
