@@ -8,6 +8,10 @@ const editSubmitSong = require("./editSubmitSong")
 
 const body = document.querySelector("body");
 body.addEventListener("click", () => {
+    //need to fix id before being passed
+    const artRef = document.querySelector(".userSong")
+    const id = artRef.id
+    console.log(id)
     if (event.target.id === "songDel") {
         const id = $(event.target).parent().attr("id");
         databaseMethods.deleteSong(id).then((response) => {
@@ -24,7 +28,9 @@ body.addEventListener("click", () => {
         editSubmitSong.editSubmitSong()
     } else if (event.target.id === "songSubmit") {
         submitSong.submitSong()
-    } else if (event.target.id === "owned") {
+    }
+    else if (event.target.id === `owned${id}`) {
+        console.log("button was clicked")
         const artRef = document.querySelector(".userSong")
         const id = artRef.id
 

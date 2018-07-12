@@ -26,13 +26,16 @@ const dashboard = Object.create({}, {
                     const $pSongTitle = $("<p>").text(`TITLE: ${element.title}`).appendTo($artRef)
                     const $pSongAlbum = $("<p>").text(`ALBUM: ${element.album}`).appendTo($pSongTitle)
                     const $pSongArtist = $("<p>").text(`ARTIST: ${element.artist}`).appendTo($pSongAlbum)
-                    const $checkBox = $("<input>").attr("type","checkbox").attr("id","owned").appendTo($artRef)
+                    const $checkBox = $("<input>").attr("type","checkbox").attr("id",`owned${element.id}`).appendTo($artRef)
                     const $checkLabel = $("<label>").attr("for","owned").text("Owned?").appendTo($artRef)
-                    const $deleteButton = $("<button>").appendTo($artRef).text("Delete").attr("id", "songDel")
-                    const $putButton = $("<button>").appendTo($artRef).text("Update").attr("id", "songPut")
-                    const $secSongs = $("<section>").attr("id","userSongs").appendTo(divRef)
+                    const $deleteButton = $("<button>").appendTo($artRef).text("Delete").attr("id", `songDel${element.id}`)
+                    const $putButton = $("<button>").appendTo($artRef).text("Update").attr("id", `songPut${element.id}`)
+                    const $secSongs = $("<section>").attr("class","sec--userSongs").appendTo(divRef)
                     $artRef.appendTo($secSongs)
-
+                    console.log("owned",element.owned)
+                        if (element.owned === "true" ){
+                            $checkBox.attr( "checked", "checked")
+                        }
                 })
             )
         }
