@@ -1,5 +1,6 @@
 const $ = require("jquery")
 const databaseMethods = require("./databaseMethods")
+const editSubmitSong = require("./editSubmitSong")
 
 const songPut = Object.create({}, {
     songPut: {
@@ -24,7 +25,9 @@ const songPut = Object.create({}, {
 
                 const $songPutSubmit = $("<button>").attr("id", "songPutSubmit").text("Submit").appendTo($divSong)
 
-
+                $songPutSubmit.click(()=>{
+                    editSubmitSong.editSubmitSong()
+                })
 
             })
 

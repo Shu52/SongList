@@ -18,7 +18,7 @@ const editSubmitSong = Object.create({}, {
                 artist: $songArtistValue,
                 owned:false
             }
-            databaseMethods.putSong(id, song).then(() => {
+            databaseMethods.patchSong(id, song).then(() => {
                 clear()
                 dashboard.dashboard()
             })

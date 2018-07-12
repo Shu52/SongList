@@ -24,11 +24,11 @@ const databaseMethods = Object.create({}, {
             })
         }
     },
-    putSong: {
+    patchSong: {
         value: (id, song) => {
            return $.ajax({
                 url: `http://localhost:3000/songs/${id}`,
-                method: "PUT",
+                method: "PATCH",
                 data: song
             })
         }
