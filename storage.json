@@ -11,7 +11,7 @@
       "title": "Sell Out",
       "album": "Turn the Radio Off",
       "artist": "Reel Big Fish",
-      "owned": false,
+      "owned": "true",
       "id": 1
     },
     {
@@ -50,13 +50,6 @@
       "id": 6
     },
     {
-      "title": "tes3",
-      "album": "test3",
-      "artist": "test3",
-      "owned": false,
-      "id": 7
-    },
-    {
       "title": "Brick",
       "album": "Whatever and Ever",
       "artist": "Ben Folds Five",
@@ -69,6 +62,26 @@
       "artist": "Adele",
       "owned": false,
       "id": 9
+    },
+    {
+      "title": "Blow the Man Down",
+      "album": "Sea Shanty",
+      "artist": "meer",
+      "id": 10,
+      "owned": "false"
+    },
+    {
+      "title": "test4",
+      "album": "test4",
+      "artist": "test4",
+      "id": 11,
+      "owned": "true"
+    },
+    {
+      "title": "test2",
+      "album": "test2",
+      "artist": "test2",
+      "id": 12
     }
   ]
 }

@@ -1,7 +1,6 @@
 const $ = require("jquery")
 const databaseMethods = require("./databaseMethods")
 const clear = require("./clear")
-const dashboard = require("./dashboard")
 
 const editSubmitSong = Object.create({}, {
     editSubmitSong: {
@@ -16,11 +15,14 @@ const editSubmitSong = Object.create({}, {
                 title: $songTitleValue,
                 album: $songAlbumValue,
                 artist: $songArtistValue,
-                owned:false
+                owned: false
             }
             databaseMethods.patchSong(id, song).then(() => {
+
                 clear()
+                const dashboard = require("./dashboard")
                 dashboard.dashboard()
+
             })
         }
     }
